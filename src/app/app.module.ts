@@ -3,21 +3,23 @@ import { NgModule } from '@angular/core';
 
 
 // Rutas
-import { APP_ROUTING } from './app.routes';
+// import { APP_ROUTING } from './app.routes';
 
 
-// Servicios
-import { CurrisvService } from './servicios/currisv.service';
+
 
 
 // Componentes
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { AboutComponent } from './components/about/about.component';
-import { CurrivComponent } from './components/curriv/CurrivComponent';
-import { CurrisvComponent } from './components/currisv/currisv.component';
 import { HomeComponent } from './components/home/home.component';
-import { NvbarComponent } from './components/shared/nvbar/nvbar.component';
+import { NosotrosComponent } from './components/nosotros/nosotros.component';
+import { MapaCurricularComponent } from './components/mapa-curricular/mapa-curricular.component';
+import { ContactoComponent } from './components/contacto/contacto.component';
+import { NavbarComponent } from './components/shared/navbar/navbar.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {FlexLayoutModule} from '@angular/flex-layout';
+import { NosotroComponent } from './components/nosotro/nosotro.component';
 
 
 
@@ -25,19 +27,21 @@ import { NvbarComponent } from './components/shared/nvbar/nvbar.component';
 @NgModule({
   declarations: [
     AppComponent,
-    NvbarComponent,
     HomeComponent,
-    AboutComponent,
-    CurrivComponent,
-    CurrisvComponent
+    NosotrosComponent,
+    MapaCurricularComponent,
+    ContactoComponent,
+    NavbarComponent,
+    NosotroComponent
    ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    APP_ROUTING
+    // APP_ROUTING,
+    BrowserAnimationsModule,
+    FlexLayoutModule
   ],
   providers: [
-    CurrisvService
   ],
   bootstrap: [AppComponent]
 })
