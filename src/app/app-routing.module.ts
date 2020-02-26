@@ -8,12 +8,13 @@ import { MapaCurricularComponent } from './components/mapa-curricular/mapa-curri
 import { ContactoComponent } from './components/contacto/contacto.component';
 import { NosotroComponent } from './components/nosotro/nosotro.component';
 
+
 const routes: Routes = [
   {path: '', component: HomeComponent },
   {path: 'nosotros', component: NosotrosComponent },
   {path: 'mapa-curricular', component: MapaCurricularComponent },
   {path: 'contacto', component: ContactoComponent },
-  {path: 'nosotro', component: NosotroComponent },
+  {path: 'nosotro', component: NosotroComponent }
   // {path: '**', pathMatch: 'full', redirectTo: 'home'}
 ];
 

@@ -13,6 +13,7 @@ const APP_ROUTES: Routes = [
     {path: 'mapa-curricular', component: MapaCurricularComponent },
     {path: 'contacto', component: ContactoComponent },
     {path: 'nosotro', component: NosotroComponent }
+
 ];
 
 export const APP_ROUTING = RouterModule.forRoot(APP_ROUTES, {useHash: true});

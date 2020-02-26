@@ -1,7 +1,8 @@
 /* You can add global styles to this file, and also import other style files */
 
 .main-container {
-    margin-top: 20px;
+    margin-top: 10px;
+  background-image: image('./assets/img/fondo.jpg') ;
 }
 
 .animated {
@@ -11,11 +12,25 @@
     animation-fill-mode: both;
 }
 
+.jubotron{
+  background-color:cadetblue !important;
+}
+
 .fast {
     -webkit-animation-duration: 1s;
     animation-duration: 1s;
     -webkit-animation-fill-mode: both;
     animation-fill-mode: both;
+}
+
+Div[name=card1]{
+  Background-color: cadetblue;
+  text: center;
+  font-size: x-large;
+}
+
+Div[name=card2]{
+  background-image: image("assets/img/fondocard.png");
 }
 
 @keyframes fadeIn {

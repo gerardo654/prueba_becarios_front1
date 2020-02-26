@@ -1,10 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
-
-// Rutas
-// import { APP_ROUTING } from './app.routes';
-
+import {FormsModule} from '@angular/forms';
+import {HttpClientModule} from '@angular/common/http';
 
 
 
@@ -22,8 +19,6 @@ import {FlexLayoutModule} from '@angular/flex-layout';
 import { NosotroComponent } from './components/nosotro/nosotro.component';
 
 
-
-
 @NgModule({
   declarations: [
     AppComponent,
@@ -39,7 +34,10 @@ import { NosotroComponent } from './components/nosotro/nosotro.component';
     AppRoutingModule,
     // APP_ROUTING,
     BrowserAnimationsModule,
-    FlexLayoutModule
+    FlexLayoutModule,
+    FormsModule,
+    HttpClientModule
+
   ],
   providers: [
   ],
